@@ -1,3 +1,86 @@
-h1 {
-  color: blue;
+:root {
+  --back-color: #01204E;
+  --primary-color: #FE7A36;
+  --accent-color: #3652AD;
+  --bright-color: #f0debd;
 }
+
+h1 {
+  color: var(--primary-color, orange);
+  font-size: 36pt;
+}
+
+h2 {
+  color: var(--accent-color, orange);
+  font-size: 24pt;
+}
+
+p {
+  color: var(--bright-color, beige);
+  font-size: 16pt;
+}
+
+body {
+  background-color: var(--back-color, navy);
+  background-image: url(https://live.staticflickr.com/65535/52565304936_fc8852f1e9_k.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+ }
+
+.main-container {
+  width: 1000px;
+  min-height: 1000px;
+  margin: 25px auto 10px auto;
+  position: relative;
+  padding: 1px;
+}
+
+.container-background {
+  background-color: var(--back-color, navy);
+  mix-blend-mode: multiply;
+  opacity: 0.8;
+  backdrop-filter: blur(5px);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  border-radius: 25px;
+}
+
+.side-container {
+  width: 300px;
+  height: 700px;
+  margin: 25px auto 10px auto;
+  position: relative;
+  padding: 1px;
+}
+
+.main-content {
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: justify;
+  perspective: 500px;
+}
+
+.pixel-image {
+  -ms-interpolation-mode: nearest neighbour;
+  image-rendering: pixelated;
+  transition: 1s;
+  &:active {
+    transform: rotateY(180deg) rotateZ(-180deg);
+    transition: 2s;
+  }
+
+}
+
+ /*Oh hello! fancy seeing you down here in the inspector
+ By all means, just barge in whenever you want!
+ Not like my ego's on the line or anything! GOSH*/
+
+ /*God its like 5:43, I NEED to go to bed*/
+/*https://colorhunt.co/palette/5222588c3061c63c51d95f59
+https://colorhunt.co/palette/01204e028391f6dcacfeae6f*/
