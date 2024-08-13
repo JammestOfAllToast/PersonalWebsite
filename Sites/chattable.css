@@ -1,3 +1,28 @@
 #top_banner {
   visibility: hidden;
 }
+
+.msgBody {
+  color: var(--bright-color, beige);
+}
+
+.senderInfo {
+  color: var(--accent-color, blue);
+}
+
+#settings {
+  color: var(--bright-color, beige);
+}
+
+#input {
+   color: var(--bright-color, beige);
+
+}
+
+#input:empty:before {
+   color: var(--bright-color, beige);
+}
+
+#background {
+  background: transparent;
+}
