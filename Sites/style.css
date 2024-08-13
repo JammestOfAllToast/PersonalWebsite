@@ -77,6 +77,13 @@ body {
 
 }
 
+#chattable {
+  margin: 8px 8px 8px 8px;
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
+  border: 0px;
+  border-radius: 25px;
+}
  /*Oh hello! fancy seeing you down here in the inspector
  By all means, just barge in whenever you want!
  Not like my ego's on the line or anything! GOSH*/
