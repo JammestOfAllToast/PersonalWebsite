@@ -1,3 +1,10 @@
+:root {
+  --back-color: #01204E;
+  --primary-color: #FE7A36;
+  --accent-color: #3652AD;
+  --bright-color: #f0debd;
+}
+
 #top_banner {
   visibility: hidden;
 }
