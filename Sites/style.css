@@ -20,6 +20,14 @@ p {
   font-size: 16pt;
 }
 
+img {
+  transition: 1s;
+  &:active {
+    transform: rotateY(180deg) rotateZ(-180deg);
+    transition: 2s;
+  }
+}
+
 body {
   background-color: var(--back-color, navy);
   background-image: url(https://live.staticflickr.com/65535/52565304936_fc8852f1e9_k.jpg);
@@ -69,11 +77,6 @@ body {
 .pixel-image {
   -ms-interpolation-mode: nearest neighbour;
   image-rendering: pixelated;
-  transition: 1s;
-  &:active {
-    transform: rotateY(180deg) rotateZ(-180deg);
-    transition: 2s;
-  }
 }
 
 .side-link {
